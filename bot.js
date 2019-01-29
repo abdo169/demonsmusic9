@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "8";
+const prefix = "9";
 /////////////////////////
 ////////////////////////
 
@@ -313,10 +313,10 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === '8help') {
+    if (message.content === '9help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
-        .setDescription('**برفكس البوت (8)**')
+        .setDescription('**برفكس البوت (9)**')
         .addField('play', 'لتشغيل اغنية')
         .addField('join', 'دخول رومك الصوتي')
         .addField('disconnect', 'الخروج من رومك الصوتي')
@@ -329,7 +329,7 @@ client.on('message', message => {
     }
 });
 
-const adminprefix = "8";
+const adminprefix = "9";
 const devs = ['487313531071496195','484098680954290219'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
